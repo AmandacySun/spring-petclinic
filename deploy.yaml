@@ -4,6 +4,6 @@
     - name: Ansible copy file to destination
       ansible.builtin.copy:
         src: "/var/jenkins_home/workspace/petclinic-a2/target/spring-petclinic-3.0.0-SNAPSHOT.jar"
-        dest: "/hw2/spring-petclinic-3.0.0-SNAPSHOT.jar"
+        dest: "/tmp/hw2/spring-petclinic-3.0.0-SNAPSHOT.jar"
     - name: Run Jar File
-      command: "java -jar /hw2/spring-petclinic-3.0.0-SNAPSHOT.jar"
+      command: "java -jar /tmp/hw2/spring-petclinic-3.0.0-SNAPSHOT.jar"
